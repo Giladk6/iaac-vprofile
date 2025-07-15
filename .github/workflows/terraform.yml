@@ -38,7 +38,7 @@ jobs:
       - name: Setup Terraform with specified version on the runner
         uses: hashicorp/setup-terraform@v3 # From Action marketplace
         #with:
-        #  terraform_version: "1.6.3" # comment for using the latest
+        #  terraform_version: "1.6.3"         # comment for using the latest
 
       - name: Terraform init
         id: init
@@ -60,3 +60,4 @@ jobs:
       - name: Terraform plan status
         if: steps.plan.outcome == 'failure' 
         run: exit 1     
+#
