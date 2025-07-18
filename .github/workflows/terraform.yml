@@ -1,9 +1,10 @@
 name: "vprofile IAAC"
+# Manual Triggering
+#on: workflow_dispatch
 on:
   push:
     branches:
       - main
-      - stage
     paths:
       - terraform/**
   pull_request:
