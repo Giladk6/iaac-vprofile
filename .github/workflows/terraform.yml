@@ -17,11 +17,9 @@ env:
   # Credentials for deployment to AWS
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
- 
-  # s3 bucket for terraform state
-  BUCKET_TF_STATE:  ${{ secrets.BUCKET_TF_STATE }}
+  BUCKET_TF_STATE:  ${{ secrets.BUCKET_TF_STATE }}   # s3 bucket for terraform state
   AWS_REGION: il-central-1
-  EKS_CLUSTER: vprofile-eks
+  EKS_CLUSTER: vpro-eks
 
 jobs:
   terraform:
